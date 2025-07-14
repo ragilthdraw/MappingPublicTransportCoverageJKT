@@ -1,42 +1,26 @@
-# MappingPublicTransportCoverageJKT
-This project aims to evaluate the coverage and accessibility of public transport services in the city of Jakarta, Indonesia, by utilizing spatial data and GTFS (General Transit Feed Specification) format.Due to the unavailability of an official GTFS feed for Semarang, a custom dataset was manually compiled from available route maps and OpenStreetMap data. The main goal is to identify which areas in Semarang are well-served by public transport and which are underserved, using spatial buffers and overlay techniques.
+# Pemetaan Cangkupan Transportasi Publik di Jakarta
+Project ini bertujuan untuk mengetahui cankupan dan aksesbilitas transportassi publik di Provinsi Jakarta, Indonesia. Project ini menggunakan data spasial kecamatan di Provinsi Jakarta dan GTFS (General Transit Feed Specification) format. Peta ini dapat digunakan untuk mengetahui kecamatan mana saja di Provinsi Jakarta yang memiliki kecangkupan dan akses terhadap fasilitas transportasi publik.  
 
 🎯 Objectives:
-Convert Semarang’s public transport information into GTFS format
-
-Visualize public transport stop locations
-
-Generate 500-meter walking distance buffers around each stop
-
-Overlay buffer coverage with administrative boundaries
-
-Calculate the percentage of each neighborhood covered by public transport
-
-Produce interactive maps and statistical summaries
+- Konversi data GTFS menjadi titik
+- Memvisualisasikan pemberhentian fasilitas transportasi publik
+- Melakukan buffer pada titik pemeberhentian fasilitas berjarak 500 meter
+- Melakukan overlay pada buffer coverage dengan batas administrasi provinsi 
+- Menghitung presentasi area yang tercangkup transportasi publik
+- Memvisualisasikan hasil analisis berupa peta
 
 🛠️ Technologies Used:
-Python: GeoPandas, Shapely, Folium, Pandas
-
-QGIS: Data preparation and shapefile handling
-
-GTFS: stops.txt, routes.txt, trips.txt (custom-built)
-
-OpenStreetMap: Base map and road network reference
-
-GeoJSON / Parquet: For geospatial data storage
+- Python: GeoPandas, Pandas, Matplotlib
+- GTFS: stops.txt, routes.txt, trips.txt (custom-built)
+- OpenStreetMap: Base map and road network reference
 
 📈 Expected Outcomes:
-A spatial layer showing walkable coverage areas from transport stops
-
-A choropleth map visualizing the coverage percentage per neighborhood
-
-CSV reports summarizing underserved areas
-
-Recommendations for route expansion and stop placements
+- Lapisan spasial yang menunjukkan area cakupan yang dapat dilalui pejalan kaki dari halte transportasi
+- Peta koroplet yang memvisualisasikan persentase cakupan per lingkungan
+- Laporan CSV yang merangkum area yang kurang terlayani
+- Rekomendasi untuk perluasan rute dan penempatan halte
 
 📦 Use Cases:
-City planning and equitable transport policy analysis
-
-Transportation accessibility studies
-
-Supporting sustainable mobility and smart city initiatives
+- Perencanaan kota dan analisis kebijakan transportasi yang berkeadilan
+- Studi aksesibilitas transportasi
+- Mendukung inisiatif mobilitas berkelanjutan dan kota pintar
